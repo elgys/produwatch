@@ -13,9 +13,9 @@ class run
         state = false;
         Console.WriteLine("first make a Stopwatch on {0:HH:mm:ss.fff}",DateTime.Now);
         Stopwatch sw = new Stopwatch(6000);
-        //Stopwatch sw2 = new Stopwatch(5000);
+        Stopwatch sw2 = new Stopwatch(5000);
         sw.FinishedEvent += EndFinishedEvent;
-        //sw2.FinishedEvent += FinishedEvent;
+        sw2.FinishedEvent += FinishedEvent;
         while(!state)
         {
             System.Threading.Thread.Sleep(1000);
