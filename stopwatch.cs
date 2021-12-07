@@ -7,7 +7,7 @@ namespace stopwatch
     {
         public event EventHandler<string> FinishedEvent;
 
-        public long Time {get; set;}
+        private long Time {get; set;}
 
         private bool isActive{get; set;}
 
